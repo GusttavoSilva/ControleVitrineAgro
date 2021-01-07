@@ -1,0 +1,13 @@
+object FrmGraficoExplore: TFrmGraficoExplore
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 663
+  ClientWidth = 911
+  Fill.Color = xFF313337
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+end

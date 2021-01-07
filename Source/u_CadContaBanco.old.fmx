@@ -1,0 +1,201 @@
+inherited FrmCadContaBanco: TFrmCadContaBanco
+  Caption = 'FrmCadContaBanco'
+  DesignerMasterStyle = 0
+  inherited lay_Principal: TLayout
+    inherited Rectangle2: TRectangle
+      inherited Layout2: TLayout
+        inherited tab_Crud: TTabControl
+          Sizes = (
+            914s
+            567s
+            914s
+            567s)
+          inherited TabItem1: TTabItem
+            ExplicitSize.cx = 69.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited lst_Principal: TListView
+              ItemAppearance.ItemHeight = 90
+              ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+                item
+                  AppearanceObjectName = 'codigo'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.Width = 87.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'banco'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.TextAlign = Leading
+                  Appearance.Width = 399.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.PlaceOffset.X = 1.000000000000000000
+                  Appearance.PlaceOffset.Y = 44.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'agencia'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.TextAlign = Leading
+                  Appearance.Width = 150.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.PlaceOffset.Y = 66.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'conta'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.TextAlign = Leading
+                  Appearance.Width = 120.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.PlaceOffset.X = 155.000000000000000000
+                  Appearance.PlaceOffset.Y = 66.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'tipo_conta'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.TextAlign = Leading
+                  Appearance.Width = 120.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.PlaceOffset.X = 278.000000000000000000
+                  Appearance.PlaceOffset.Y = 66.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'movimentacao'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.TextAlign = Trailing
+                  Appearance.Width = 170.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.Align = Trailing
+                  Appearance.PlaceOffset.X = -100.000000000000000000
+                  Appearance.PlaceOffset.Y = 18.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'saldo'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.TextAlign = Trailing
+                  Appearance.Width = 170.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.Align = Trailing
+                  Appearance.PlaceOffset.X = -100.000000000000000000
+                  Appearance.PlaceOffset.Y = 48.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'titular'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.TextAlign = Leading
+                  Appearance.Width = 567.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.PlaceOffset.Y = 22.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'Image9'
+                  AppearanceClassName = 'TImageObjectAppearance'
+                  Appearance.Width = 50.000000000000000000
+                  Appearance.Height = 90.000000000000000000
+                  Appearance.Align = Trailing
+                end>
+            end
+            inherited Layout3: TLayout
+              Anchors = [akTop]
+              inherited Img_BtnNovo: TImage
+                MultiResBitmap.Height = 128
+                MultiResBitmap.Width = 128
+                Position.X = 16.000000000000000000
+              end
+            end
+            inherited lay_listVazia: TLayout
+              inherited Image1: TImage
+                MultiResBitmap.Height = 452
+                MultiResBitmap.Width = 452
+              end
+            end
+          end
+          inherited TabItem2: TTabItem
+            ExplicitSize.cx = 69.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited Layout4: TLayout
+              inherited Layout6: TLayout
+                inherited Img_BtnSalvar: TImage
+                  MultiResBitmap.Height = 128
+                  MultiResBitmap.Width = 128
+                  Position.Y = 1.000000000000000000
+                  OnClick = Img_BtnSalvarClick
+                end
+                inherited Img_BtnExcluir: TImage
+                  MultiResBitmap.Height = 128
+                  MultiResBitmap.Width = 128
+                end
+                inherited Img_BtnEditar: TImage
+                  MultiResBitmap.Height = 128
+                  MultiResBitmap.Width = 128
+                  Position.Y = 1.000000000000000000
+                end
+                inherited Img_BtnCancelar: TImage
+                  MultiResBitmap.Height = 128
+                  MultiResBitmap.Width = 128
+                end
+              end
+            end
+            inherited lay_error: TLayout
+              inherited lbl_Erro: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  object cds_log: TFDMemTable
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 301
+    Top = 53
+    object cds_logtitular: TStringField
+      FieldName = 'titular'
+      Size = 255
+    end
+    object cds_logcpf_titular: TStringField
+      FieldName = 'cpf_titular'
+      Size = 255
+    end
+    object cds_logconta: TStringField
+      FieldName = 'conta'
+      Size = 255
+    end
+    object cds_logagencia: TStringField
+      FieldName = 'agencia'
+      Size = 255
+    end
+    object cds_logbanco: TStringField
+      FieldName = 'banco'
+      Size = 255
+    end
+    object cds_logtipo_conta: TStringField
+      FieldName = 'tipo_conta'
+      Size = 255
+    end
+    object cds_logtipo_movimentacao: TStringField
+      FieldName = 'tipo_movimentacao'
+      Size = 255
+    end
+    object cds_logdescricao: TStringField
+      FieldName = 'descricao'
+      Size = 255
+    end
+    object cds_logsaldo: TStringField
+      FieldName = 'saldo'
+      Size = 255
+    end
+    object cds_logid: TStringField
+      FieldName = 'id'
+      Size = 255
+    end
+  end
+end

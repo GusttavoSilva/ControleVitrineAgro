@@ -1,0 +1,671 @@
+inherited FrmCadPessoa: TFrmCadPessoa
+  Caption = '0004 - Cadastro de Pessoas'
+  ClientHeight = 800
+  ClientWidth = 1292
+  DesignerMasterStyle = 0
+  inherited lay_Principal: TLayout
+    Size.Width = 1292.000000000000000000
+    Size.Height = 800.000000000000000000
+    inherited Rectangle2: TRectangle
+      Size.Width = 1292.000000000000000000
+      Size.Height = 800.000000000000000000
+      inherited Layout2: TLayout
+        Size.Width = 1292.000000000000000000
+        Size.Height = 800.000000000000000000
+        inherited tab_Crud: TTabControl
+          Size.Width = 1292.000000000000000000
+          Size.Height = 800.000000000000000000
+          TabIndex = 0
+          Sizes = (
+            1292s
+            800s
+            1292s
+            800s)
+          inherited TabItem1: TTabItem
+            IsSelected = True
+            ExplicitSize.cx = 69.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited Layout3: TLayout
+              Size.Width = 1292.000000000000000000
+              inherited Rectangle1: TRectangle
+                Size.Width = 1292.000000000000000000
+                inherited ed_pesq: TEdit
+                  Position.X = 20.000000000000000000
+                  Position.Y = 30.000000000000000000
+                end
+                inherited Label1: TLabel
+                  Size.Width = 1292.000000000000000000
+                end
+                inherited lbl_tela1: TLabel
+                  Position.X = 881.000000000000000000
+                end
+              end
+            end
+            inherited lay_listVazia: TLayout
+              Size.Height = 478.000000000000000000
+              inherited Image1: TImage
+                MultiResBitmap.Height = 452
+                MultiResBitmap.Width = 452
+              end
+            end
+            inherited lst_Principal: TListView
+              Size.Width = 1292.000000000000000000
+              Size.Height = 631.000000000000000000
+              ItemAppearance.ItemHeight = 40
+              ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+                item
+                  AppearanceObjectName = 'lbl_codigo'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.Font.Size = 14.000000000000000000
+                  Appearance.Font.StyleExt = {00070000000000000004000000}
+                  Appearance.Width = 151.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'lbl_nome'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.Font.Size = 14.000000000000000000
+                  Appearance.Font.StyleExt = {00070000000000000004000000}
+                  Appearance.Width = 377.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.PlaceOffset.X = 150.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'lbl_telefone'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.Font.Size = 14.000000000000000000
+                  Appearance.Font.StyleExt = {00070000000000000004000000}
+                  Appearance.Width = 135.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.PlaceOffset.X = 758.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'lbl_cpf'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.Font.Size = 14.000000000000000000
+                  Appearance.Font.StyleExt = {00070000000000000004000000}
+                  Appearance.Width = 231.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.PlaceOffset.X = 527.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'codigo'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.Font.Size = 13.000000000000000000
+                  Appearance.Width = 151.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.PlaceOffset.Y = 20.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'nome'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.Font.Size = 13.000000000000000000
+                  Appearance.Width = 377.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.PlaceOffset.X = 150.000000000000000000
+                  Appearance.PlaceOffset.Y = 20.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'cpf'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.Font.Size = 13.000000000000000000
+                  Appearance.Width = 231.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.PlaceOffset.X = 526.000000000000000000
+                  Appearance.PlaceOffset.Y = 20.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'telefone'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.Font.Size = 13.000000000000000000
+                  Appearance.Width = 135.000000000000000000
+                  Appearance.Height = 20.000000000000000000
+                  Appearance.PlaceOffset.X = 757.000000000000000000
+                  Appearance.PlaceOffset.Y = 20.000000000000000000
+                end>
+              ItemAppearanceObjects.FooterObjects.Text.Width = 892.000000000000000000
+              ItemAppearanceObjects.FooterObjects.Text.Height = 23.000000000000000000
+            end
+            inherited lay_menubtn: TLayout
+              Position.Y = 731.000000000000000000
+              Size.Width = 1292.000000000000000000
+              inherited rct_menuboton: TRectangle
+                Size.Width = 1292.000000000000000000
+                inherited Img_BtnNovo: TImage
+                  MultiResBitmap.Height = 128
+                  MultiResBitmap.Width = 128
+                end
+              end
+            end
+          end
+          inherited TabItem2: TTabItem
+            IsSelected = False
+            ExplicitSize.cx = 69.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited Layout4: TLayout
+              Size.Width = 1292.000000000000000000
+              TabOrder = 4
+              inherited Rectangle6: TRectangle
+                Size.Width = 1292.000000000000000000
+                inherited lbl_tela: TLabel
+                  Size.Width = 833.000000000000000000
+                end
+              end
+            end
+            inherited img_selecionado: TImage
+              MultiResBitmap.Height = 128
+              MultiResBitmap.Width = 128
+            end
+            inherited Rectangle7: TRectangle
+              Size.Width = 1292.000000000000000000
+              Size.Height = 631.000000000000000000
+              inherited lay_error: TLayout
+                Size.Width = 1092.000000000000000000
+                TabOrder = 11
+                inherited Rectangle3: TRectangle
+                  Size.Width = 1092.000000000000000000
+                end
+                inherited lbl_Erro: TLabel
+                  Size.Width = 1082.000000000000000000
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                end
+              end
+              object Layout1: TLayout
+                Align = Center
+                Anchors = [akTop]
+                Size.Width = 827.000000000000000000
+                Size.Height = 519.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 12
+                object cbx_TipoPessoa: TComboEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 0
+                  ItemHeight = 19.000000000000000000
+                  Items.Strings = (
+                    'INFORME O TIPO DE PESSOA...'
+                    '00001 - F'#205'SICA'
+                    '00002 - JUR'#205'DICA'
+                    '')
+                  ItemIndex = 0
+                  Text = 'INFORME O TIPO DE PESSOA...'
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Position.X = 12.000000000000000000
+                  Position.Y = 74.000000000000000000
+                  StyledSettings = [Family, Style, FontColor]
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Size.Width = 221.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                  OnChange = cbx_TipoPessoaChange
+                end
+                object ed_Nome: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 1
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Position.X = 12.000000000000000000
+                  Position.Y = 121.000000000000000000
+                  Enabled = False
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Size.Width = 757.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'NOME COMPLETO'
+                  StyledSettings = [Family, Style, FontColor]
+                  CharCase = ecUpperCase
+                end
+                object ed_Cpf: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  StyleLookup = 'ed_CpfStyle1'
+                  TabOrder = 2
+                  CanParentFocus = True
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Position.X = 12.000000000000000000
+                  Position.Y = 171.000000000000000000
+                  Enabled = False
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Size.Width = 327.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'CPF/CNPJ'
+                  StyledSettings = [Family, Style, FontColor]
+                  CharCase = ecUpperCase
+                  OnExit = ed_CpfExit
+                end
+                object cbx_Estado: TComboEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 8
+                  ItemHeight = 19.000000000000000000
+                  Items.Strings = (
+                    '')
+                  ItemIndex = -1
+                  Text = 'INFORME O ESTADO'
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Position.X = 20.000000000000000000
+                  Position.Y = 305.000000000000000000
+                  StyledSettings = [Family, Style, FontColor]
+                  Enabled = False
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Size.Width = 173.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                  OnChange = cbx_EstadoChange
+                end
+                object cbx_Cidade: TComboEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 9
+                  ItemHeight = 19.000000000000000000
+                  ItemIndex = -1
+                  Text = 'INFORME A CIDADE...'
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Position.X = 444.000000000000000000
+                  Position.Y = 305.000000000000000000
+                  StyledSettings = [Family, Style, FontColor]
+                  Enabled = False
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Size.Width = 327.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                end
+                object ed_Email: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 5
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Position.X = 444.000000000000000000
+                  Position.Y = 215.000000000000000000
+                  Enabled = False
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Size.Width = 327.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'EMAIL'
+                  StyledSettings = [Family, Style, FontColor]
+                  CharCase = ecUpperCase
+                end
+                object ed_Telefone: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 3
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Position.X = 444.000000000000000000
+                  Position.Y = 171.000000000000000000
+                  Enabled = False
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Size.Width = 327.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'TELEFONE'
+                  StyledSettings = [Family, Style, FontColor]
+                  CharCase = ecUpperCase
+                end
+                object ed_Bairro: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 7
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Position.X = 444.000000000000000000
+                  Position.Y = 260.000000000000000000
+                  Enabled = False
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Size.Width = 325.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'BAIRRO'
+                  StyledSettings = [Family, Style, FontColor]
+                  CharCase = ecUpperCase
+                end
+                object ed_Endereco: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 4
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Position.X = 12.000000000000000000
+                  Position.Y = 215.000000000000000000
+                  Enabled = False
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Size.Width = 325.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'ENDERE'#199'O'
+                  StyledSettings = [Family, Style, FontColor]
+                  CharCase = ecUpperCase
+                end
+                object ed_Complemento: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 6
+                  TextSettings.Font.Size = 14.000000000000000000
+                  Position.X = 12.000000000000000000
+                  Position.Y = 260.000000000000000000
+                  Enabled = False
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Size.Width = 325.000000000000000000
+                  Size.Height = 25.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'COMPLEMENTO'
+                  StyledSettings = [Family, Style, FontColor]
+                  CharCase = ecUpperCase
+                end
+                object ed_Obs: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  TabOrder = 10
+                  TextSettings.Font.Size = 14.000000000000000000
+                  TextSettings.VertAlign = Leading
+                  Position.X = 12.000000000000000000
+                  Position.Y = 356.000000000000000000
+                  Enabled = False
+                  Margins.Left = 20.000000000000000000
+                  Margins.Top = 5.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Size.Width = 757.000000000000000000
+                  Size.Height = 53.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'DESCRI'#199#195'O'
+                  StyledSettings = [Family, Style, FontColor]
+                  CharCase = ecUpperCase
+                end
+                object lytFuncaoPessoa: TLayout
+                  Margins.Top = 10.000000000000000000
+                  Position.X = 448.000000000000000000
+                  Position.Y = 58.000000000000000000
+                  Size.Width = 321.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 11
+                  object ckb_fornecedor: TCheckBox
+                    Position.X = 75.000000000000000000
+                    Position.Y = 16.000000000000000000
+                    Size.Width = 97.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 6
+                    Text = 'FORNECEDOR'
+                  end
+                  object ckb_cliente: TCheckBox
+                    Position.X = 3.000000000000000000
+                    Position.Y = 16.000000000000000000
+                    Size.Width = 76.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 7
+                    Text = 'CLIENTE'
+                  end
+                  object ckb_funcionario: TCheckBox
+                    Position.X = 176.000000000000000000
+                    Position.Y = 16.000000000000000000
+                    Size.Width = 105.000000000000000000
+                    Size.Height = 19.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 8
+                    Text = 'FUNCION'#193'RIO'
+                  end
+                end
+                object Label14: TLabel
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Position.X = 12.000000000000000000
+                  Position.Y = 56.000000000000000000
+                  Size.Width = 200.000000000000000000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  Text = 'Tipo de Pessoa:'
+                  TabOrder = 23
+                end
+                object Label3: TLabel
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Position.X = 12.000000000000000000
+                  Position.Y = 104.000000000000000000
+                  Size.Width = 200.000000000000000000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  Text = 'Nome:'
+                  TabOrder = 21
+                end
+                object Label4: TLabel
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Position.X = 12.000000000000000000
+                  Position.Y = 335.000000000000000000
+                  Size.Width = 200.000000000000000000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  Text = 'Descri'#231#227'o:'
+                  TabOrder = 12
+                end
+                object Label5: TLabel
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Position.X = 12.000000000000000000
+                  Position.Y = 151.000000000000000000
+                  Size.Width = 200.000000000000000000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  Text = 'CPF/CNPJ:'
+                  TabOrder = 20
+                end
+                object Label6: TLabel
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Position.X = 444.000000000000000000
+                  Position.Y = 151.000000000000000000
+                  Size.Width = 200.000000000000000000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  Text = 'Telefone:'
+                  TabOrder = 19
+                end
+                object Label7: TLabel
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Position.X = 12.000000000000000000
+                  Position.Y = 198.000000000000000000
+                  Size.Width = 200.000000000000000000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  Text = 'Endere'#231'o:'
+                  TabOrder = 18
+                end
+                object Label8: TLabel
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Position.X = 12.000000000000000000
+                  Position.Y = 243.000000000000000000
+                  Size.Width = 200.000000000000000000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  Text = 'Complemento:'
+                  TabOrder = 17
+                end
+                object Label9: TLabel
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Position.X = 444.000000000000000000
+                  Position.Y = 288.000000000000000000
+                  Size.Width = 200.000000000000000000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  Text = 'Cidade:'
+                  TabOrder = 16
+                end
+                object Label11: TLabel
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Position.X = 444.000000000000000000
+                  Position.Y = 243.000000000000000000
+                  Size.Width = 200.000000000000000000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  Text = 'Bairro:'
+                  TabOrder = 14
+                end
+                object Label12: TLabel
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Position.X = 444.000000000000000000
+                  Position.Y = 198.000000000000000000
+                  Size.Width = 200.000000000000000000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  Text = 'E-mail:'
+                  TabOrder = 13
+                end
+                object Label10: TLabel
+                  StyledSettings = [Family, Size, FontColor]
+                  Margins.Left = 20.000000000000000000
+                  Margins.Right = 30.000000000000000000
+                  Position.X = 12.000000000000000000
+                  Position.Y = 288.000000000000000000
+                  Size.Width = 101.000000000000000000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.StyleExt = {00070000000000000004000000}
+                  Text = 'Estado:'
+                  TabOrder = 15
+                end
+                object Label24: TLabel
+                  Align = Top
+                  StyledSettings = [Style, FontColor]
+                  Margins.Top = 10.000000000000000000
+                  Position.Y = 10.000000000000000000
+                  Size.Width = 827.000000000000000000
+                  Size.Height = 17.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Family = 'Noto Sans semibold'
+                  TextSettings.Font.Size = 16.000000000000000000
+                  TextSettings.HorzAlign = Center
+                  Text = 'CADASTRAR PESSOA'
+                  TabOrder = 22
+                end
+              end
+            end
+            inherited lay_bottonmenu: TLayout
+              Position.Y = 731.000000000000000000
+              Size.Width = 1292.000000000000000000
+              TabOrder = 3
+              inherited rct_bottonmenu: TRectangle
+                Size.Width = 1292.000000000000000000
+                inherited Layout6: TLayout
+                  inherited Img_BtnSalvar: TImage
+                    MultiResBitmap.Height = 128
+                    MultiResBitmap.Width = 128
+                    OnClick = Img_BtnSalvarClick
+                  end
+                  inherited Img_BtnExcluir: TImage
+                    MultiResBitmap.Height = 128
+                    MultiResBitmap.Width = 128
+                  end
+                  inherited Img_BtnEditar: TImage
+                    MultiResBitmap.Height = 128
+                    MultiResBitmap.Width = 128
+                  end
+                  inherited Img_BtnCancelar: TImage
+                    MultiResBitmap.Height = 128
+                    MultiResBitmap.Width = 128
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end>
+  end
+  object cds_log: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 128
+    Top = 96
+    object cds_logid: TStringField
+      FieldName = 'id'
+    end
+    object cds_lognome: TStringField
+      FieldName = 'nome'
+    end
+    object cds_logemail: TStringField
+      FieldName = 'email'
+      Size = 0
+    end
+    object cds_logcidade: TStringField
+      FieldName = 'cidade'
+    end
+    object cds_logestado: TStringField
+      FieldName = 'estado'
+    end
+    object cds_logendereco: TStringField
+      FieldName = 'endereco'
+    end
+    object cds_logbairro: TStringField
+      FieldName = 'bairro'
+    end
+    object cds_logcomplemento: TStringField
+      FieldName = 'complemento'
+    end
+    object cds_logtelefone: TStringField
+      FieldName = 'telefone'
+    end
+    object cds_logtipo_pessoa: TStringField
+      FieldName = 'tipo_pessoa'
+    end
+    object cds_logcpf_pessoa: TStringField
+      FieldName = 'cpf_pessoa'
+    end
+    object cds_logobservacao: TStringField
+      FieldName = 'observacao'
+    end
+    object cds_logfuncionario: TStringField
+      FieldName = 'funcionario'
+    end
+    object cds_logfornecedor: TStringField
+      FieldName = 'fornecedor'
+    end
+    object cds_logcliente: TStringField
+      FieldName = 'cliente'
+    end
+  end
+end
