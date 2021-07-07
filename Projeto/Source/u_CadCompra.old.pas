@@ -142,7 +142,7 @@ type
     ed_Lote: TEdit;
     ClearEditButton2: TClearEditButton;
     TabPessoa: TTabItem;
-    lay_lstvaziaPessoa: TLayout;
+    lay_lstvaziaPessoa: TLayout;asdasdasdad
     Image3: TImage;
     Label41: TLabel;
     Layout1: TLayout;
@@ -731,11 +731,11 @@ begin
       with item do
       begin
         txt := TListItemText(Objects.FindDrawable('lbl_codigo'));
-        txt.Text := 'CÓDIGO';
+        txt.Text := 'Cï¿½DIGO';
         txt.TagString := '0';
 
         txt := TListItemText(Objects.FindDrawable('lbl_numero'));
-        txt.Text := 'NÚMERO';
+        txt.Text := 'Nï¿½MERO';
 
         txt := TListItemText(Objects.FindDrawable('lbl_quantidade'));
         txt.Text := 'QTD ANIMAIS';
@@ -814,7 +814,7 @@ begin
       with item do
       begin
         txt := TListItemText(Objects.FindDrawable('lbl_codigo'));
-        txt.Text := 'CÓDIGO';
+        txt.Text := 'Cï¿½DIGO';
         txt.TagString := '0';
 
         txt := TListItemText(Objects.FindDrawable('lbl_nome'));
@@ -903,7 +903,7 @@ begin
       with item do
       begin
         txt := TListItemText(Objects.FindDrawable('lbl_codigo'));
-        txt.Text := 'CÓDIGO';
+        txt.Text := 'Cï¿½DIGO';
         txt.TagString := '0';
 
         txt := TListItemText(Objects.FindDrawable('lbl_data'));
@@ -916,7 +916,7 @@ begin
         txt.Text := 'FORNECEDOR';
 
         txt := TListItemText(Objects.FindDrawable('lbl_conta'));
-        txt.Text := 'CONTA BANCÁRIA';
+        txt.Text := 'CONTA BANCï¿½RIA';
 
         txt := TListItemText(Objects.FindDrawable('lbl_quantidade'));
         txt.Text := 'QUANTIDADE';
@@ -1014,7 +1014,7 @@ begin
       with item do
       begin
         txt := TListItemText(Objects.FindDrawable('lbl_codigo'));
-        txt.Text := 'CÓDIGO';
+        txt.Text := 'Cï¿½DIGO';
         txt.TagString := '0';
 
         txt := TListItemText(Objects.FindDrawable('lbl_banco'));
@@ -1024,10 +1024,10 @@ begin
         txt.Text := 'CONTA';
 
         txt := TListItemText(Objects.FindDrawable('lbl_agencia'));
-        txt.Text := 'AGÊNCIA';
+        txt.Text := 'AGï¿½NCIA';
 
         txt := TListItemText(Objects.FindDrawable('lbl_movimentacao'));
-        txt.Text := 'MOVIMENTAÇÃO';
+        txt.Text := 'MOVIMENTAï¿½ï¿½O';
 
         txt := TListItemText(Objects.FindDrawable('lbl_saldo'));
         txt.Text := 'SALDO';
@@ -1059,7 +1059,7 @@ begin
           0:
             txt.Text := 'ENTRADA';
           1:
-            txt.Text := 'SAÍDA';
+            txt.Text := 'SAï¿½DA';
         end;
 
         txt := TListItemText(Objects.FindDrawable('saldo'));
@@ -1196,7 +1196,7 @@ begin
         dm.QAux.First;
         vCampo := 0;
         cont := 1;
-        vResultado.Add('INFORME A RAÇA DO (S) ANIMAL (AIS)...');
+        vResultado.Add('INFORME A RAï¿½A DO (S) ANIMAL (AIS)...');
         while vCampo < dm.QAux.RecordCount do
         begin
           valid := IntToStr(cont);
@@ -1246,7 +1246,7 @@ begin
         dm.QAux.First;
         vCampo := 0;
         cont := 1;
-        vResultado.Add('INFORME O TIPO DO CAMINHÃO...');
+        vResultado.Add('INFORME O TIPO DO CAMINHï¿½O...');
         while vCampo < dm.QAux.RecordCount do
         begin
           valid := IntToStr(cont);
@@ -1343,7 +1343,7 @@ begin
   inherited;
   if (not(KeyChar in ['0'..'9'])) and (KeyChar <>#0) then
   begin
-    ShowMessage('Somente números!');
+    ShowMessage('Somente nï¿½meros!');
     KeyChar := #0;
   end;
 end;
@@ -1585,7 +1585,7 @@ begin
   finally
     FreeAndNil(Query);
     LimpaCampos;
-    ShowMessage('Registro excluído com sucesso!');
+    ShowMessage('Registro excluï¿½do com sucesso!');
     ConsultaCompras;
     LogCompras;
     tab_Crud.ActiveTab := TabItem1;
@@ -1684,7 +1684,7 @@ begin
       begin
         if ValidarPessoa(ed_Pessoa.Text) = 1 then
         begin
-          if mensagemConfirmacao('Já existe uma pessoa cadastrada com esse nome. Deseja continuar com o cadastro?') = mrYes then
+          if mensagemConfirmacao('Jï¿½ existe uma pessoa cadastrada com esse nome. Deseja continuar com o cadastro?') = mrYes then
           begin
             if rbFisica1.IsChecked then
               SalvarPessoa(ed_Pessoa.Text, 1)
@@ -1764,7 +1764,7 @@ begin
       begin
         if ValidarPessoa(ed_Motorista.Text) = 1 then
         begin
-          if mensagemConfirmacao('Já existe uma pessoa cadastrada com esse nome. Deseja continuar com o cadastro?') = mrYes then
+          if mensagemConfirmacao('Jï¿½ existe uma pessoa cadastrada com esse nome. Deseja continuar com o cadastro?') = mrYes then
           begin
             if rbFisica2.IsChecked then
               SalvarPessoa(ed_Motorista.Text, 1)
@@ -1816,7 +1816,7 @@ begin
       begin
         if ValidarPessoa(ed_Corretor.Text) = 1 then
         begin
-          if mensagemConfirmacao('Já existe uma pessoa cadastrada com esse nome. Deseja continuar com o cadastro?') = mrYes then
+          if mensagemConfirmacao('Jï¿½ existe uma pessoa cadastrada com esse nome. Deseja continuar com o cadastro?') = mrYes then
           begin
             if rbFisica3.IsChecked then
               SalvarPessoa(ed_Corretor.Text, 1)
@@ -1998,7 +1998,7 @@ begin
         else
         begin
           ShowMessage
-            ('Não foi possível carregar o dados dessa conta. Tente outra vez.');
+            ('Nï¿½o foi possï¿½vel carregar o dados dessa conta. Tente outra vez.');
           tab_Crud.ActiveTab := TabItem2;
         end;
       end;
@@ -2062,7 +2062,7 @@ begin
         else
         begin
           ShowMessage
-            ('Não foi possível carregar o dados desse lote. Tente outra vez.');
+            ('Nï¿½o foi possï¿½vel carregar o dados desse lote. Tente outra vez.');
           tab_Crud.ActiveTab := TabItem2;
         end;
       end;
@@ -2138,7 +2138,7 @@ begin
         else
         begin
           ShowMessage
-            ('Não foi possível carregar o dados dessa pessoa. Tente outra vez.');
+            ('Nï¿½o foi possï¿½vel carregar o dados dessa pessoa. Tente outra vez.');
           tab_Crud.ActiveTab := TabItem2;
         end;
       end;
@@ -2157,8 +2157,8 @@ begin
   // begin
   // log(0007, MaxCod('compras'), '', ' data_compra: ' + DateToStr(DateEditCompra.Date) + ' lote: ' + edTms_Lote.Text + ' fornecedor: ' + edTms_Fornecedor.Text +
   // ' conta_bancaria: ' + edTms_ContaBancaria.Text + ' quantidade_cbs: ' + ed_Quantidade.Text + ' valor total dos animais: ' + ed_ValorTotalAnimal.Text + ' valor por cbs: ' + ed_ValorPorAnimal.Text
-  // + ' idade: ' + cbx_IdadeAnimal.Items[cbx_IdadeAnimal.ItemIndex] + ' sexo: ' + cbx_SexoAnimal.Items[cbx_IdadeAnimal.ItemIndex] + ' raça: ' + cbx_TipoAnimal.Items[cbx_TipoAnimal.ItemIndex]
-  // + ' etiqueta: ' + ed_Etiqueta.Text + ' caminhão: ' + cbx_TipoCaminhao.Items[cbx_TipoCaminhao.ItemIndex] + ' placa: ' + ed_PlacaCaminhao.Text + ' motorista ' + edTms_Motorista.Text
+  // + ' idade: ' + cbx_IdadeAnimal.Items[cbx_IdadeAnimal.ItemIndex] + ' sexo: ' + cbx_SexoAnimal.Items[cbx_IdadeAnimal.ItemIndex] + ' raï¿½a: ' + cbx_TipoAnimal.Items[cbx_TipoAnimal.ItemIndex]
+  // + ' etiqueta: ' + ed_Etiqueta.Text + ' caminhï¿½o: ' + cbx_TipoCaminhao.Items[cbx_TipoCaminhao.ItemIndex] + ' placa: ' + ed_PlacaCaminhao.Text + ' motorista ' + edTms_Motorista.Text
   // + ' valor total frete: ' + ed_ValorTotalFrete.Text + ' valor frete por cbs: ' + ed_ValorFretePorAnimal.Text + ' corretor: ' + edTms_Corretor.Text + ' valor total comissao: ' + ed_ValorTotalComissao.Text
   // + ' valor comissao por cbs: ' + ed_ValorComisPorAnimal.Text + ' valor total compra: ' + ed_ValorTotalCompra.Text + ' valor compra por cbs: ' + ed_valorporcbs_compra.Text
   // + ' descricao: ' + ed_Obs.Text);
@@ -2171,16 +2171,16 @@ begin
   // cds_log.FieldByName('lote').AsString + ' fornecedor: ' + cds_log.FieldByName('fornecedor').AsString + ' conta_bancaria: ' +
   // cds_log.FieldByName('conta_bancaria').AsString + ' quantidade_cbs: ' + cds_log.FieldByName('quantidade_cbs').AsString + ' valor total dos animais: ' +
   // cds_log.FieldByName('valortotal_animais').AsString + ' valor por cbs: ' + cds_log.FieldByName('valorporcbs_animais').AsString
-  // + ' idade: ' + cds_log.FieldByName('idade_animal').AsString + ' sexo: ' + cds_log.FieldByName('sexo_animal').AsString + ' raça: ' + cds_log.FieldByName('raca_animal').AsString +
-  // ' etiqueta: ' + cds_log.FieldByName('etiqueta').AsString + ' caminhão: ' + cds_log.FieldByName('tipo_caminhao').AsString + ' placa: ' + cds_log.FieldByName('placa_caminhao').AsString +
+  // + ' idade: ' + cds_log.FieldByName('idade_animal').AsString + ' sexo: ' + cds_log.FieldByName('sexo_animal').AsString + ' raï¿½a: ' + cds_log.FieldByName('raca_animal').AsString +
+  // ' etiqueta: ' + cds_log.FieldByName('etiqueta').AsString + ' caminhï¿½o: ' + cds_log.FieldByName('tipo_caminhao').AsString + ' placa: ' + cds_log.FieldByName('placa_caminhao').AsString +
   // ' motorista: ' + cds_log.FieldByName('motorista').AsString + ' valor frete: ' + cds_log.FieldByName('valortotal_frete').AsString + ' valor frete por cbs: ' + cds_log.FieldByName('valorporcbs_frete').AsString +
-  // ' corretor: ' + cds_log.FieldByName('corretor').AsString + ' valor comissão: ' + cds_log.FieldByName('valortotal_comissao').AsString + ' valor comissao por cbs: ' + cds_log.FieldByName('valorporcbs_comissao').AsString
+  // ' corretor: ' + cds_log.FieldByName('corretor').AsString + ' valor comissï¿½o: ' + cds_log.FieldByName('valortotal_comissao').AsString + ' valor comissao por cbs: ' + cds_log.FieldByName('valorporcbs_comissao').AsString
   // + ' descricao: ' + cds_log.FieldByName('descricao').AsString + ' valor total compra: ' + cds_log.FieldByName('valortotal_compra').AsString + ' valor compra por cbs: ' + cds_log.FieldByName('valorporcbs_compra').AsString,
   //
   // ' data_compra: ' + DateToStr(DateEditCompra.Date) + ' lote: ' + edTms_Lote.Text + ' fornecedor: ' + edTms_Fornecedor.Text +
   // ' conta_bancaria: ' + edTms_ContaBancaria.Text + ' quantidade_cbs: ' + ed_Quantidade.Text + ' valor total dos animais: ' + ed_ValorTotalAnimal.Text + ' valor por cbs: ' + ed_ValorPorAnimal.Text
-  // + ' idade: ' + cbx_IdadeAnimal.Items[cbx_IdadeAnimal.ItemIndex] + ' sexo: ' + cbx_SexoAnimal.Items[cbx_IdadeAnimal.ItemIndex] + ' raça: ' + cbx_TipoAnimal.Items[cbx_TipoAnimal.ItemIndex]
-  // + ' etiqueta: ' + ed_Etiqueta.Text + ' caminhão: ' + cbx_TipoCaminhao.Items[cbx_TipoCaminhao.ItemIndex] + ' placa: ' + ed_PlacaCaminhao.Text + ' motorista ' + edTms_Motorista.Text
+  // + ' idade: ' + cbx_IdadeAnimal.Items[cbx_IdadeAnimal.ItemIndex] + ' sexo: ' + cbx_SexoAnimal.Items[cbx_IdadeAnimal.ItemIndex] + ' raï¿½a: ' + cbx_TipoAnimal.Items[cbx_TipoAnimal.ItemIndex]
+  // + ' etiqueta: ' + ed_Etiqueta.Text + ' caminhï¿½o: ' + cbx_TipoCaminhao.Items[cbx_TipoCaminhao.ItemIndex] + ' placa: ' + ed_PlacaCaminhao.Text + ' motorista ' + edTms_Motorista.Text
   // + ' valor total frete: ' + ed_ValorTotalFrete.Text + ' valor frete por cbs: ' + ed_ValorFretePorAnimal.Text + ' corretor: ' + edTms_Corretor.Text + ' valor total comissao: ' + ed_ValorTotalComissao.Text
   // + ' valor comissao por cbs: ' + ed_ValorComisPorAnimal.Text + ' valor total compra: ' + ed_ValorTotalCompra.Text + ' valor compra por cbs: ' + ed_valorporcbs_compra.Text
   // + ' descricao: ' + ed_Obs.Text);
@@ -2192,10 +2192,10 @@ begin
   // cds_log.FieldByName('lote').AsString + ' fornecedor: ' + cds_log.FieldByName('fornecedor').AsString + ' conta_bancaria: ' +
   // cds_log.FieldByName('conta_bancaria').AsString + ' quantidade_cbs: ' + cds_log.FieldByName('quantidade_cbs').AsString + ' valor total dos animais: ' +
   // cds_log.FieldByName('valortotal_animais').AsString + ' valor por cbs: ' + cds_log.FieldByName('valorporcbs_animais').AsString
-  // + ' idade: ' + cds_log.FieldByName('idade_animal').AsString + ' sexo: ' + cds_log.FieldByName('sexo_animal').AsString + ' raça: ' + cds_log.FieldByName('raca_animal').AsString +
-  // ' etiqueta: ' + cds_log.FieldByName('etiqueta').AsString + ' caminhão: ' + cds_log.FieldByName('tipo_caminhao').AsString + ' placa: ' + cds_log.FieldByName('placa_caminhao').AsString +
+  // + ' idade: ' + cds_log.FieldByName('idade_animal').AsString + ' sexo: ' + cds_log.FieldByName('sexo_animal').AsString + ' raï¿½a: ' + cds_log.FieldByName('raca_animal').AsString +
+  // ' etiqueta: ' + cds_log.FieldByName('etiqueta').AsString + ' caminhï¿½o: ' + cds_log.FieldByName('tipo_caminhao').AsString + ' placa: ' + cds_log.FieldByName('placa_caminhao').AsString +
   // ' motorista: ' + cds_log.FieldByName('motorista').AsString + ' valor frete: ' + cds_log.FieldByName('valortotal_frete').AsString + ' valor frete por cbs: ' + cds_log.FieldByName('valorporcbs_frete').AsString +
-  // ' corretor: ' + cds_log.FieldByName('corretor').AsString + ' valor comissão: ' + cds_log.FieldByName('valortotal_comissao').AsString + ' valor comissao por cbs: ' + cds_log.FieldByName('valorporcbs_comissao').AsString
+  // ' corretor: ' + cds_log.FieldByName('corretor').AsString + ' valor comissï¿½o: ' + cds_log.FieldByName('valortotal_comissao').AsString + ' valor comissao por cbs: ' + cds_log.FieldByName('valorporcbs_comissao').AsString
   // + ' descricao: ' + cds_log.FieldByName('descricao').AsString + ' valor total compra: ' + cds_log.FieldByName('valortotal_compra').AsString + ' valor compra por cbs: ' + cds_log.FieldByName('valorporcbs_compra').AsString, '')
   // end;
 end;
@@ -2308,7 +2308,7 @@ begin
         else
         begin
           ShowMessage
-            ('Não foi possível carregar o dados dessa despesa. Tente outra vez.');
+            ('Nï¿½o foi possï¿½vel carregar o dados dessa despesa. Tente outra vez.');
           tab_Crud.ActiveTab := TabItem1;
         end;
       end;
@@ -2347,7 +2347,7 @@ begin
       with item do
       begin
         txt := TListItemText(Objects.FindDrawable('lbl_codigo'));
-        txt.Text := 'CÓDIGO';
+        txt.Text := 'Cï¿½DIGO';
         txt.TagString := '0';
 
         txt := TListItemText(Objects.FindDrawable('lbl_data'));
@@ -2360,7 +2360,7 @@ begin
         txt.Text := 'FORNECEDOR';
 
         txt := TListItemText(Objects.FindDrawable('lbl_conta'));
-        txt.Text := 'CONTA BANCÁRIA';
+        txt.Text := 'CONTA BANCï¿½RIA';
 
         txt := TListItemText(Objects.FindDrawable('lbl_quantidade'));
         txt.Text := 'QUANTIDADE';
@@ -2427,7 +2427,7 @@ begin
   // FORNECEDOR
   // edTms_Fornecedor.Text := Query.FieldByName('fornecedor').AsString;
   ed_Pessoa.Text := Query.FieldByName('fornecedor').AsString;
-  // CONTA BANCÁRIA
+  // CONTA BANCï¿½RIA
   // edTms_ContaBancaria.Text := Query.FieldByName('conta').AsString;
   ed_Conta.Text := formatfloat('00000', Query.FieldByName('id_cc')
               .AsFloat) + ' - ' + Query.FieldByName('conta').AsString;
@@ -2444,15 +2444,15 @@ begin
   cbx_IdadeAnimal.ItemIndex := Query.FieldByName('idade_animal').AsInteger;
   // SEXO ANIMAL
   cbx_SexoAnimal.ItemIndex := Query.FieldByName('sexo_animal').AsInteger;
-  // RAÇA ANIMAL
+  // RAï¿½A ANIMAL
   ConsultaRacaAnimal;
   cbx_TipoAnimal.ItemIndex := Query.FieldByName('raca_animal').AsInteger;
   // ETIQUETA
   ed_Etiqueta.Text := Query.FieldByName('etiqueta').AsString;
-  // TIPO DE CAMINHÃO
+  // TIPO DE CAMINHï¿½O
   ConsultaTipoCaminhao;
   cbx_TipoCaminhao.ItemIndex := Query.FieldByName('tipo_caminhao').AsInteger;
-  // PLACA CAMINHÃO
+  // PLACA CAMINHï¿½O
   ed_PlacaCaminhao.Text := Query.FieldByName('placa_caminhao').AsString;
   //FORMA DE PAGAMENTO
   ConsultaFormaPagto;
@@ -2469,13 +2469,13 @@ begin
   // CORRETOR
   // edTms_Corretor.Text := Query.FieldByName('corretor').AsString;
   ed_Corretor.Text := Query.FieldByName('corretor').AsString;
-  // VALOR TOTAL DA COMISSÃO
+  // VALOR TOTAL DA COMISSï¿½O
   ed_ValorTotalComissao.Text := formatfloat('###,##0.00',
     Query.FieldByName('valortotal_comissao').AsFloat);
-  // VALOR COMISSÃO POR ANIMAL
+  // VALOR COMISSï¿½O POR ANIMAL
   ed_ValorComisPorAnimal.Text := formatfloat('###,##0.00',
     Query.FieldByName('valorporcbs_comissao').AsFloat);
-  // DESCRIÇÃO
+  // DESCRIï¿½ï¿½O
   ed_Obs.Text := Query.FieldByName('descricao').AsString;
   // VALOR TOTAL DA COMPRA
   ed_ValorTotalCompra.Text := formatfloat('###,##0.00',
@@ -2684,7 +2684,7 @@ begin
   if (ed_Lote.Text = EmptyStr) or (cod_vali = 1) then
   begin
     lay_error.Visible := true;
-    lbl_Erro.Text := 'Erro 6001 : ' + sLineBreak + 'Selecione um LOTE válido!';
+    lbl_Erro.Text := 'Erro 6001 : ' + sLineBreak + 'Selecione um LOTE vï¿½lido!';
     ed_Lote.SetFocus;
     abort;
   end;
@@ -2693,7 +2693,7 @@ begin
   begin
     lay_error.Visible := true;
     lbl_Erro.Text := 'Erro 6002 : ' + sLineBreak +
-      'Selecione um(a) FORNECEDOR(A) válido(a)!';
+      'Selecione um(a) FORNECEDOR(A) vï¿½lido(a)!';
     ed_Pessoa.SetFocus;
     abort;
   end;
@@ -2702,7 +2702,7 @@ begin
   begin
     lay_error.Visible := true;
     lbl_Erro.Text := 'Erro 6003 : ' + sLineBreak +
-      'Selecione uma CONTA válida!';
+      'Selecione uma CONTA vï¿½lida!';
     ed_Conta.SetFocus;
     abort;
   end;
@@ -2747,7 +2747,7 @@ begin
   begin
     lay_error.Visible := true;
     lbl_Erro.Text := 'Erro 6008 : ' + sLineBreak +
-      'Selecione a RAÇA do (s) animal (ais)!';
+      'Selecione a RAï¿½A do (s) animal (ais)!';
     cbx_TipoAnimal.SetFocus;
     abort;
   end;
@@ -2765,7 +2765,7 @@ begin
   begin
     lay_error.Visible := true;
     lbl_Erro.Text := 'Erro 6010 : ' + sLineBreak +
-      'Insira o VALOR TOTAL DA COMISSÃO!';
+      'Insira o VALOR TOTAL DA COMISSï¿½O!';
     ed_ValorTotalComissao.SetFocus;
     abort;
   end;
@@ -2774,7 +2774,7 @@ begin
   begin
     lay_error.Visible := true;
     lbl_Erro.Text := 'Erro 6011 : ' + sLineBreak +
-      'Selecione um(a) MOTORISTA válido(a)!';
+      'Selecione um(a) MOTORISTA vï¿½lido(a)!';
     ed_Motorista.SetFocus;
     abort;
   end;
@@ -2783,7 +2783,7 @@ begin
   begin
     lay_error.Visible := true;
     lbl_Erro.Text := 'Erro 6012 : ' + sLineBreak +
-      'Selecione um(a) CORRETOR(A) válido(a)!';
+      'Selecione um(a) CORRETOR(A) vï¿½lido(a)!';
     ed_Corretor.SetFocus;
     abort;
   end;
@@ -2794,7 +2794,7 @@ begin
     begin
       lay_error.Visible := true;
       lbl_Erro.Text := 'Erro 6013 : ' + sLineBreak +
-        'Selecione um TIPO DE PESSOA válido no(a) FORNECEDOR(A)!';
+        'Selecione um TIPO DE PESSOA vï¿½lido no(a) FORNECEDOR(A)!';
       rbFisica1.SetFocus;
       abort;
     end
@@ -2802,7 +2802,7 @@ begin
     begin
       lay_error.Visible := true;
       lbl_Erro.Text := 'Erro 6014 : ' + sLineBreak +
-        'Selecione um TIPO DE PESSOA válido no(a) MOTORISTA!';
+        'Selecione um TIPO DE PESSOA vï¿½lido no(a) MOTORISTA!';
       rbFisica2.SetFocus;
       abort;
     end
@@ -2810,7 +2810,7 @@ begin
     begin
       lay_error.Visible := true;
       lbl_Erro.Text := 'Erro 6015 : ' + sLineBreak +
-        'Selecione um TIPO DE PESSOA válido no(a) CORRETOR(A)!';
+        'Selecione um TIPO DE PESSOA vï¿½lido no(a) CORRETOR(A)!';
       rbFisica3.SetFocus;
       abort;
     end;
@@ -2820,7 +2820,7 @@ begin
   begin
     lay_error.Visible := true;
     lbl_Erro.Text := 'Erro 6016 : ' + sLineBreak +
-      'Já existe um lote cadastrado com esse nome/número!';
+      'Jï¿½ existe um lote cadastrado com esse nome/nï¿½mero!';
     ed_Corretor.SetFocus;
     abort;
   end;
